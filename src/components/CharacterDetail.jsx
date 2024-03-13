@@ -4,8 +4,9 @@ import "./list.css"
 
 function CharacterDetail() {
 
-    const [transformations, setTransformations] = useState([]);
+    const [transformation, setTransformation] = useState([]);
     const [selectedTransformationImage, setSelectedTransformationImage] = useState("");
+    const [selectedKi, setSelectedKi] = useState("")
     const { id } = useParams()
     const details = useLoaderData();
 
@@ -14,33 +15,40 @@ function CharacterDetail() {
         fetch(`https://dragonball-api.com/api/characters/${id}`)
             .then((res) => res.json())
             .then((data) => {
-                setTransformations(data.transformations || []);
+                setTransformation(data.transformations || []);
                 console.info(data);
             });
 
     }, [id]);
 
-    const handleTransformationClick = (imageURL) => {
+    const handleTransformationClick = (imageURL, ki) => {
         setSelectedTransformationImage(imageURL);
+        setSelectedKi(ki)
     };
 
     return (
 
         <section>
             <h1 className="title-name">{details.name}</h1>
+            {selectedKi !== null && (
+                <h2 className="title-ki">{selectedKi}</h2>
+            )}
+
             {details && (
                 <div className="profil-character">
                     <img className="detail-character" src={selectedTransformationImage || details.image} alt={details.name} />
                 </div>
             )}
-            {transformations && (
+            {transformation && (
                 <div className="character-list-transformation">
-                    {transformations.map((transformationMap) => (
-                        <button key={transformationMap.id} onClick={() => handleTransformationClick(transformationMap.image)}>
-                            {transformationMap.name}
-                        </button>
+                    {transformation.map((transformationMap) => (
+                        <div key={transformationMap.id} >
+                            <button onClick={() => handleTransformationClick(transformationMap.image,transformationMap.ki)}>
+                                {transformationMap.name}
+                            </button>
+                        </div>
                     ))}
-    
+
                 </div>
             )}
         </section >

@@ -4,3 +4,9 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  

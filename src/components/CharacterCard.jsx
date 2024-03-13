@@ -54,7 +54,7 @@ export default function CharacterCard({ character }) {
               <Typography level="title-lg">
                 {character.name}
               </Typography>
-              <Typography level="body-sm">{character.ki}</Typography>
+              <strong>Ki {character.ki}</strong>
             </div>
             <IconButton
               size="sm"
@@ -73,7 +73,7 @@ export default function CharacterCard({ character }) {
               </div>
             </Avatar>
             <div>
-              <Typography level="body-xs">{character.race} </Typography>
+              <strong>{character.race} </strong>
               <Typography level="body-sm">{character.affiliation}</Typography>
             </div>
           </Box>

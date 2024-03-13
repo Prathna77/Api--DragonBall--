@@ -21,11 +21,13 @@ justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+   
 }
 
 .img-homepage {
     height: 38rem;
     width: 70rem;
+    border-radius: 1rem;
 }
 
 .button-homepage {
@@ -44,6 +46,13 @@ justify-content: center;
 
 }
 
+.title-ki {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+
+}
 .trans-ki {
     display: flex;
     justify-content: center;
