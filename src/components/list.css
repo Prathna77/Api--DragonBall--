@@ -1,0 +1,201 @@
+.title-DragonBall {
+    display: flex;
+    justify-content: center;
+
+}
+
+.title-DragonBall-inside {
+    height: 13rem;
+
+}
+
+.title-page-character {
+display: flex;
+justify-content: center;
+    font-size: 5rem ;
+    color: white;
+    padding: 2rem 0;
+}
+
+.title-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-homepage {
+    height: 38rem;
+    width: 70rem;
+}
+
+.button-homepage {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 2rem;
+
+}
+
+.title-name {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    color: white;
+
+}
+
+.trans-ki {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.character-list-transformation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+
+}
+
+.planet-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-planet {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.profil-planet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail-planet {
+    height: 25rem;
+    border-radius: 1rem;
+    border: 2.5px solid black;
+
+}
+
+.detail-planet-list {
+    height: 15rem;
+    border-radius: 2rem;
+    border: 2.5px solid white;
+}
+
+.button-acced-detail{
+    display: flex;
+    align-items: center;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.boule-crystal-pagination {
+    height: 2.5rem;
+}
+
+.profil-character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail-character {
+    height: 40rem;
+}
+
+.description-character {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+.description-planet {
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+/* CSS INDEX */
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #ffef64;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+/* CSS CARD */
+
+.detail-character2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-card {
+    background-image: url("../assets/image/backgroundCard.png");
+    display: flex;
+    border-radius: 2rem;
+    justify-content: center;
+    padding: 1rem;
+}
+.img-card :hover{
+    transform: scale(1.1);
+}
+
+.img-card-inside {
+    height: 35rem;
+    width: 19rem;
+}
